@@ -1,0 +1,20 @@
+{
+    "message": "Bonjour i18n !!",
+      "header": {
+        "appName": "MyTODO",
+        "allTodo": "Tous les Tâches",
+        "todo": "Tâches à faire",
+        "done": "Tâches accomplies",
+        "deleteAllDone": "Suprimer les Tâches accomplies",
+        "user": "Utilisateur"
+      },
+      "user":{
+        "profile": "Profile",
+        "signOut": "Déconection"
+      },
+      "todoAdd":{
+        "addATodo": "Ajouter une Tâche",
+        "addATodoDetail": "Détails de la Tâche",
+        "tasksTodo": "Tâches à faire"
+      }
+  }

@@ -1,0 +1,20 @@
+{
+  "message": "hello i18n !!",
+    "header": {
+      "appName": "MyTODO",
+      "allTodo": "All Todos",
+      "todo": "Todo",
+      "done": "Done",
+      "deleteAllDone": "Delete All Done",
+      "user": "User"
+    },
+    "user":{
+      "profile": "Profile",
+      "signOut": "Sign Out"
+    },
+    "todoAdd":{
+      "addATodo": "Add a Todo",
+      "addATodoDetail": "Add a Todo Detail",
+      "tasksTodo": "Tasks Todo"
+    }
+}
