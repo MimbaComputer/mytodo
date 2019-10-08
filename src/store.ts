@@ -15,7 +15,8 @@ export default new Vuex.Store({
       {title:'Sport every firday',detail:'Gymn to for fitness',completed:true},
       {title:'Title 4',detail:'The detail 4',completed:false},
       {title:'Scan code with SonarQube',detail:'Use SonarQube to check the quality of code',completed:false},
-    ]
+    ],
+    baseUrl: process.env.BASE_URL
   },
   getters : {
     remainingTodo:(state)=>{

@@ -17,10 +17,10 @@
                     
                     <b-nav-item-dropdown :text="`${$i18n.locale}`" right>
                         <template v-slot:button-content>
-                        <img :src="`/${$i18n.locale}.png`" alt="english flag"/>
+                        <img :src="`${baseUrl}${$i18n.locale}.png`" alt="english flag"/>
                     </template>
-                    <b-dropdown-item @click.prevent="setLocale('en')"><img src="/en.png"/>English </b-dropdown-item>
-                    <b-dropdown-item @click.prevent="setLocale('fr')"><img src="/fr.png"/>Français</b-dropdown-item>
+                    <b-dropdown-item @click.prevent="setLocale('en')"><img :src="`${baseUrl}/en.png`"/>English </b-dropdown-item>
+                    <b-dropdown-item @click.prevent="setLocale('fr')"><img :src="`${baseUrl}/fr.png`"/>Français</b-dropdown-item>
                     </b-nav-item-dropdown>
 
                     <b-nav-item-dropdown right>
@@ -54,9 +54,13 @@ export default {
         }
     },
     computed:{
-        doneTodo: function(){
+        doneTodo(){
         return this.$store.getters.doneTodo;
+        },
+        baseUrl(){
+            return this.$store.state.baseUrl;
         }
+    
     }
 }
 </script>
